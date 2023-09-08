@@ -1,6 +1,7 @@
+#define morse code for each letter
 def morse(letter):
     match(letter):
-        #alphabet
+        #morse code for alphabet
         case "a":
             return(".-")
         case "b":
@@ -53,7 +54,7 @@ def morse(letter):
             return("-.--")
         case "z":
             return("--..")
-        #number
+        #morse code for number
         case "1":
             return(".----")
         case "2":
@@ -74,18 +75,15 @@ def morse(letter):
             return("----.")
         case "0":
             return("-----")
-        #special case
-        case " ":
-            return("/")
 def main():
     code = []
-    #waiting input
+    #get input from user
     words = input("Enter Word(s) : ")
-    #divide word to letters
+    #turn string to lower case and divide word to character
     letters = [*words.lower()]
-    #turn letter into code
+    #turn each character into morse code and add it to the list
     for letter in letters:
         code.append(morse(letter))
-    #print final code
+    #print the entire morse code
     print("Morse : ", *code)
 main()
