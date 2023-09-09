@@ -1,5 +1,5 @@
 # morse-code
-turn string input to morse code separated with "/" (slash)
+turn string input to morse code
 
 ##How does this work?
 this program is working by splitting each words into character and then turn that each character into morse code.
